@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Read|Bash|WebFetch|WebSearch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/autonod.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

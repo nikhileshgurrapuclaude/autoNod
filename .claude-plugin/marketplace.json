@@ -1,0 +1,16 @@
+{
+  "name": "autonod-marketplace",
+  "owner": "nikhileshgurrapuclaude",
+  "metadata": {
+    "description": "Marketplace hosting the autoNod plugin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "autonod",
+      "source": "./",
+      "description": "Frictionless-but-safe auto-approval for Claude Code. Auto-approves safe frontend edits; hard-denies .env, secrets, backend URLs, and network egress in every permission mode.",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "autonod",
+  "version": "0.1.0",
+  "description": "Frictionless-but-safe auto-approval for Claude Code. Auto-approves safe frontend file edits so you don't babysit permission prompts, while hard-denying .env, secrets, backend URLs, and network egress no matter which permission mode you run.",
+  "author": {
+    "name": "Nikhilesh_Gurrapu",
+    "url": "https://github.com/nikhileshgurrapuclaude"
+  },
+  "homepage": "https://github.com/nikhileshgurrapuclaude/autonod",
+  "license": "MIT",
+  "keywords": [
+    "permissions",
+    "hooks",
+    "frontend",
+    "auto-approve",
+    "security"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "//": "autoNod configuration. Edit this to fit your project. Deny always wins over allow.",
+
+  "allowedDirs": [
+    "src/",
+    "app/",
+    "pages/",
+    "components/",
+    "styles/",
+    "public/",
+    "assets/",
+    "lib/"
+  ],
+
+  "allowedRootFiles": [
+    "index.html",
+    "package.json",
+    "tsconfig.json",
+    "vite.config.ts",
+    "vite.config.js",
+    "next.config.js",
+    "next.config.mjs",
+    "tailwind.config.js",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "svelte.config.js",
+    "astro.config.mjs"
+  ],
+
+  "allowedExtensions": [
+    ".tsx", ".jsx", ".ts", ".js", ".mjs", ".cjs",
+    ".css", ".scss", ".sass", ".less",
+    ".html", ".htm", ".vue", ".svelte", ".astro",
+    ".json", ".md", ".mdx", ".svg"
+  ],
+
+  "//backendDomains": "Add YOUR backend hosts here. Any edit that writes one of these, or any bash referencing them, is denied. Empty by default so nothing false-positives until you opt in.",
+  "backendDomains": [],
+
+  "//extraDenyPaths": "Glob-ish substrings. Any tool touching a path containing one of these is denied.",
+  "extraDenyPaths": [
+    "server/",
+    "backend/",
+    "api/secrets",
+    "config/secrets",
+    ".env.local",
+    ".env.production"
+  ],
+
+  "//autoApproveSafeBash": "If true, a curated allowlist of harmless frontend bash (npm/pnpm/yarn/bun run dev|build|lint|test|format|typecheck, tsc, eslint, prettier, git status/diff/log) is auto-approved. Dangerous bash is still denied; unknown bash still prompts.",
+  "autoApproveSafeBash": true,
+
+  "//denyAllNetworkTools": "If true, Claude's own WebFetch/WebSearch are always denied (prevents Claude exfiltrating anything over the network).",
+  "denyAllNetworkTools": true
+}

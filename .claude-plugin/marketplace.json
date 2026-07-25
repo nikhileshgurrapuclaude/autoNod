@@ -1,6 +1,6 @@
 {
   "name": "nikhilesh-plugins",
-  "owner": "nikhileshgurrapuclaude",
+  "owner": { "name": "nikhileshgurrapuclaude" },
   "metadata": {
     "description": "Marketplace hosting the autoNod plugin.",
     "version": "0.1.0"

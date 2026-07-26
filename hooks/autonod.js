@@ -162,6 +162,7 @@ const BASH_SAFE_PATTERNS = [
   /^\s*(npx\s+)?(tsc|eslint|prettier|vite|next|svelte-kit|astro)\b/i,
   /^\s*git\s+(status|diff|log|branch|show)\b/i,
   /^\s*(ls|dir|pwd|cd|echo|jobs|sleep|which|where|whoami)\b/i,
+  /^\s*(grep|rg|findstr|head|tail|wc|sort|find)\b/i,
   /^\s*node\s+(-v|--version)\b/i,
   /^\s*cat\s+package\.json\b/i,
 ];

@@ -21,7 +21,7 @@
         "url": "https://github.com/nikhileshgurrapuclaude/usage-line.git"
       },
       "description": "Always-on status line showing model, context window %, session cost, and 5h/7d rate-limit usage. Configures itself automatically on first run — no settings.json editing required.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }

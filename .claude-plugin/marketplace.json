@@ -1,9 +1,11 @@
 {
   "name": "nikhilesh-plugins",
-  "owner": { "name": "nikhileshgurrapuclaude" },
+  "owner": {
+    "name": "nikhileshgurrapuclaude"
+  },
   "metadata": {
-    "description": "Marketplace hosting the autoNod plugin.",
-    "version": "0.1.0"
+    "description": "Marketplace hosting the autoNod and usage-line plugins.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -11,6 +13,15 @@
       "source": "./",
       "description": "Frictionless-but-safe auto-approval for Claude Code. Auto-approves safe frontend edits; hard-denies .env, secrets, backend URLs, and network egress in every permission mode.",
       "version": "0.1.0"
+    },
+    {
+      "name": "usage-line",
+      "source": {
+        "source": "github",
+        "repo": "nikhileshgurrapuclaude/usage-line"
+      },
+      "description": "Always-on status line showing model, context window %, session cost, and 5h/7d rate-limit usage. Configures itself automatically on first run — no settings.json editing required.",
+      "version": "1.0.0"
     }
   ]
 }
